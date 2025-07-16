@@ -5,6 +5,33 @@
   --section-padding: 100px;
 }
 /* End Variables */
+/* my fueature */
+.pricing .plans .plan .foot a {
+position: relative;
+overflow: hidden;
+}
+.pricing .plans .plan .foot a::before {
+     content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease;
+    left: 0;
+    height: 100%;
+    font-size: inherit;
+    transform: translateX(60px);
+}
+.pricing .plans .plan .foot a:hover::before {
+    transform: translateX(0px);
+}
+.pricing .plans .plan .foot a:hover span{
+    transform: translateX(-50px);
+}
+.pricing .plans .plan .foot a span {
+    transform: translateX(0px);
+    transition: all 0.3s ease;
+    
+    display: block;
+}
 /* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
@@ -24,7 +51,7 @@ ul {
 }
 .container {
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,7 +189,7 @@ header nav ul li a {
 header nav ul li a.active,
 header nav ul li a:hover {
   color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);  
 }
 header nav .form {
   width: 40px;
@@ -242,9 +269,12 @@ header nav .form i {
 }
 .landing .fa-angle-left {
   left: 30px;
+  cursor: pointer;
+
 }
 .landing .fa-angle-right {
   right: 30px;
+  cursor: pointer;
 }
 .landing .bullets {
   position: absolute;
@@ -647,6 +677,14 @@ transform: translateX(-100%);
   align-items: center;
   margin-bottom: 30px;
 }
+.our-skills .testimonials .fa-angle {
+  display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    cursor: pointer;
+    margin-left: -40px;
+    margin-right: -40px;
+}
 .our-skills .testimonials .content img {
   width: 100px;
   border-radius: 50%;
@@ -832,10 +870,32 @@ transform: translateX(-100%);
   display: block;
   width: fit-content;
   margin: 20px auto;
+  position: relative;
   background-color: var(--main-color);
   color: white;
   padding: 15px 30px;
   text-decoration: none;
+}
+.pricing .contact-link::before {
+transition: all 0.3s ease;
+content: attr(data-text);
+position: absolute;
+width: 100%;
+left: 40%;
+  transform: translateX(100px);
+}
+.pricing .contact-link:hover::before {
+transform: translateX(0px);
+
+} 
+.pricing .contact-link span {
+display: block;
+transition: all 0.3s ease;
+transform: translateX(0px);
+} 
+.pricing .contact-link:hover span{
+  
+  transform: translateX(-100px);
 }
 /* End Pricing */
 /* Start Subscribe */
@@ -893,6 +953,7 @@ transform: translateX(-100%);
   padding: 10px 20px;
   border: 1px solid white;
   border-left: none;
+  cursor: pointer;
   text-transform: uppercase;
 }
 .subscribe form input[type="email"]:focus,
@@ -1025,6 +1086,11 @@ transform: translateX(-100%);
 }
 .footer .social-icons i {
   padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.footer .social-icons i:hover {
+  color: #19c8fa;
 }
 .footer .copyright {
   margin-top: 60px;
