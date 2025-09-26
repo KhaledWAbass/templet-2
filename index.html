@@ -14,6 +14,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Link JQ -->
+   <script src="jQuery v3.7.1.js"></script>
   </head>
   <body>
     <!-- Start Header -->
@@ -26,11 +28,11 @@
           <i class="fas fa-bars toggle-menu"></i>
           <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
           <div class="form">
             <i class="fas fa-search"></i>
@@ -65,7 +67,7 @@
     </div>
     <!-- End Landing -->
     <!-- Start Services -->
-    <div class="services">
+    <div id="Services" class="services">
       <div class="container">
         <div class="main-heading">
           <h2>Services</h2>
@@ -136,7 +138,7 @@
     </div>
     <!-- End Design -->
     <!-- Start Portfolio -->
-    <div class="portfolio">
+    <div id="Portfolio" class="portfolio">
       <div class="container">
         <div class="main-heading">
           <h2>Portfolio</h2>
@@ -227,7 +229,7 @@
     </div>
     <!-- End Video -->
     <!-- Start About -->
-    <div class="about">
+    <div id="About" class="about">
       <div class="container">
         <div class="main-heading">
           <h2>About Us</h2>
@@ -345,7 +347,7 @@
     </div>
     <!-- End Quote -->
     <!-- Start Pricing -->
-    <div class="pricing">
+    <div id="Pricing" class="pricing">
       <div class="container">
         <div class="main-heading">
           <h2>Pricing</h2>
@@ -436,7 +438,7 @@
     </div>
     <!-- End Subscribe -->
     <!-- Start Contact -->
-    <div class="contact">
+    <div id="Contact" class="contact">
       <div class="container">
         <div class="main-heading">
           <h2>Contact Us</h2>
@@ -450,7 +452,7 @@
             <input class="main-input" type="text" name="name" placeholder="Your Name" />
             <input class="main-input" type="email" name="mail" placeholder="Your Email" />
             <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" />
+            <input data-text="Message" type="submit" value="Send " />
           </form>
           <div class="info">
             <h4>Get In Touch</h4>
@@ -477,7 +479,14 @@
         <p class="copyright">&copy; 2021 <span>Kasper</span> All Right Reserved</p>
       </div>
     </div>
+    <!--  -->
     <!-- End Footer -->
+    <!-- start button UP -->
+    <div class="UP">UP</div>
+    <!-- End button UP -->
+    <!-- start Scroller UP -->
+    <div class="scroller"></div>
+        <!-- End Scroller UP -->
      <script src="mian.js"></script>
   </body>
 </html>

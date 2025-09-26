@@ -1008,10 +1008,17 @@ transform: translateX(0px);
   color: white;
   padding: 20px;
   border: none;
+  position: relative;
   display: flex;
   margin-left: auto;
   text-transform: uppercase;
   cursor: pointer;
+}
+.contact .content form input[type="submit"]::before {
+  content: attr(data-text);
+  margin-left: 10px;
+  position: absolute;
+  color: white;
 }
 .contact .content .info {
   flex-basis: 25%;
@@ -1100,3 +1107,37 @@ transform: translateX(0px);
   color: var(--main-color);
 }
 /* End Footer */
+.UP {
+    cursor: pointer;
+    position: fixed;
+    transition: all 0.3s ease;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    display: none;
+    z-index: 99; 
+}
+.UP:hover {
+    background-color: #0f748f;
+}
+.scroller {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: all 0.6s ease;
+    left: 0;
+    border-radius: 8px;
+    height: 7px;
+    background-color: var(--main-color);
+}
+.scroller:hover {
+  background-color: #0f748f;
+}
