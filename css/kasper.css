@@ -7,30 +7,30 @@
 /* End Variables */
 /* my fueature */
 .pricing .plans .plan .foot a {
-position: relative;
-overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 .pricing .plans .plan .foot a::before {
-     content: attr(data-text);
-    position: absolute;
-    width: 100%;
-    transition: all 0.3s ease;
-    left: 0;
-    height: 100%;
-    font-size: inherit;
-    transform: translateX(60px);
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  transition: all 0.3s ease;
+  left: 0;
+  height: 100%;
+  font-size: inherit;
+  transform: translateX(60px);
 }
 .pricing .plans .plan .foot a:hover::before {
-    transform: translateX(0px);
+  transform: translateX(0px);
 }
-.pricing .plans .plan .foot a:hover span{
-    transform: translateX(-50px);
+.pricing .plans .plan .foot a:hover span {
+  transform: translateX(-50px);
 }
 .pricing .plans .plan .foot a span {
-    transform: translateX(0px);
-    transition: all 0.3s ease;
-    
-    display: block;
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+
+  display: block;
 }
 /* Start Global Rules */
 * {
@@ -51,7 +51,7 @@ ul {
 }
 .container {
   padding-left: 15px;
-  padding-right: 15px; 
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -189,7 +189,7 @@ header nav ul li a {
 header nav ul li a.active,
 header nav ul li a:hover {
   color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);  
+  border-bottom: 1px solid var(--main-color);
 }
 header nav .form {
   width: 40px;
@@ -270,7 +270,6 @@ header nav .form i {
 .landing .fa-angle-left {
   left: 30px;
   cursor: pointer;
-
 }
 .landing .fa-angle-right {
   right: 30px;
@@ -456,22 +455,22 @@ header nav .form i {
 .portfolio .imgs-container .box .caption p {
   color: var(--main-color);
 }
-.portfolio  a{
-     display: block;
-    width: 135px;
-    margin: 30px auto;
-    background-color: transparent;
-    color: var(--main-color);
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    transition: 0.3s;
-    font-size: 20px;
-    border: 2px solid;
-    overflow: hidden;
+.portfolio a {
+  display: block;
+  width: 135px;
+  margin: 30px auto;
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+  font-size: 20px;
+  border: 2px solid;
+  overflow: hidden;
 }
-.portfolio  a::before {
+.portfolio a::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -483,14 +482,14 @@ header nav .form i {
   transition: 0.3s;
   height: 100%;
 }
-.portfolio  a span {
+.portfolio a span {
   display: block;
   transition: 0.3s;
 }
-.portfolio  a:hover::before {
+.portfolio a:hover::before {
   transform: translateX(0);
 }
-.portfolio  a:hover span {
+.portfolio a:hover span {
   transform: translateX(-100%);
 }
 /* End Portfolio */
@@ -529,18 +528,18 @@ header nav .form i {
   margin-bottom: 30px;
 }
 .video .text a {
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border: 2px solid;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    text-transform: uppercase;
-    overflow: hidden;
-    width: 130px;
-    margin: 0px auto;
-    transition: 0.3s;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border: 2px solid;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 130px;
+  margin: 0px auto;
+  transition: 0.3s;
 }
 .video .text a::before {
   content: attr(data-text);
@@ -560,8 +559,8 @@ header nav .form i {
 .video .text a:hover::before {
   transform: translateX(0);
 }
-.video .text a:hover span{
-transform: translateX(-100%);
+.video .text a:hover span {
+  transform: translateX(-100%);
 }
 /* End Video */
 /* Start About */
@@ -679,11 +678,11 @@ transform: translateX(-100%);
 }
 .our-skills .testimonials .fa-angle {
   display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    cursor: pointer;
-    margin-left: -40px;
-    margin-right: -40px;
+  justify-content: space-between;
+  justify-items: center;
+  cursor: pointer;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 .our-skills .testimonials .content img {
   width: 100px;
@@ -877,24 +876,22 @@ transform: translateX(-100%);
   text-decoration: none;
 }
 .pricing .contact-link::before {
-transition: all 0.3s ease;
-content: attr(data-text);
-position: absolute;
-width: 100%;
-left: 40%;
+  transition: all 0.3s ease;
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  left: 40%;
   transform: translateX(100px);
 }
 .pricing .contact-link:hover::before {
-transform: translateX(0px);
-
-} 
+  transform: translateX(0px);
+}
 .pricing .contact-link span {
-display: block;
-transition: all 0.3s ease;
-transform: translateX(0px);
-} 
-.pricing .contact-link:hover span{
-  
+  display: block;
+  transition: all 0.3s ease;
+  transform: translateX(0px);
+}
+.pricing .contact-link:hover span {
   transform: translateX(-100px);
 }
 /* End Pricing */
@@ -1108,35 +1105,35 @@ transform: translateX(0px);
 }
 /* End Footer */
 .UP {
-    cursor: pointer;
-    position: fixed;
-    transition: all 0.3s ease;
-    bottom: 20px;
-    right: 20px;
-    font-size: 20px;
-    padding: 15px;
-    color: white;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    font-weight: bold;
-    width: 60px;
-    text-align: center;
-    height: 60px;
-    display: none;
-    z-index: 99; 
+  cursor: pointer;
+  position: fixed;
+  transition: all 0.3s ease;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  font-weight: bold;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  display: none;
+  z-index: 99;
 }
 .UP:hover {
-    background-color: #0f748f;
+  background-color: #0f748f;
 }
 .scroller {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    transition: all 0.6s ease;
-    left: 0;
-    border-radius: 8px;
-    height: 7px;
-    background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  transition: all 0.6s ease;
+  left: 0;
+  border-radius: 8px;
+  height: 7px;
+  background-color: var(--main-color);
 }
 .scroller:hover {
   background-color: #0f748f;
