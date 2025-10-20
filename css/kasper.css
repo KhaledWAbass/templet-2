@@ -405,7 +405,16 @@ header nav .form i {
 }
 .portfolio .shuffle li {
   padding: 10px;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+.portfolio .shuffle li:hover:not(li.active) {
+  opacity: 0.5;
+  background-color: var(--main-color);
+  color: white;
+}
+
 .portfolio .shuffle li.active {
   background-color: var(--main-color);
   color: white;
@@ -415,12 +424,16 @@ header nav .form i {
   flex-wrap: wrap;
   margin-top: 60px;
 }
+
 .portfolio .imgs-container .box {
   overflow: hidden;
   position: relative;
 }
 .portfolio .imgs-container .box:hover .caption {
   bottom: 0;
+}
+.portfolio .imgs-container .box img {
+  border-radius: 6px;
 }
 .portfolio .imgs-container .box:hover img {
   transform: rotate(3deg) scale(1.1);
